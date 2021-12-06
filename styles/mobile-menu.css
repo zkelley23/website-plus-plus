@@ -1,0 +1,119 @@
+/* ----- Mobile Slide Out Menu ----- */
+.sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 18;
+    top: 0;
+    right: 0;
+    background-color: var(--white);
+    /* border-left: 2px solid var(--gray); */
+    overflow-x: hidden;
+    transition: var(--transition-time);
+    padding-top: 71px;
+    box-shadow: -3px 0px 6px #00000029;
+}
+
+.sideNav a {
+    padding: 8px 8px 8px 32px;
+    color: var(--black);
+    display: block;
+    transition: var(--transition-time);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.sideNav a:hover {
+    color: var(--orange);
+}
+
+.sideNav .closeBtn {
+    position: absolute;
+    top: 0px;
+    right: 4px;
+    font-size: 36px;
+    margin-right: 24px;
+    color: var(--black);
+}
+
+.sideNav .active {
+    color: var(--royal);
+}
+
+.menuIcon {
+    display: none;
+    width: 24px;
+}
+
+#darken {
+    position: absolute;
+    z-index: 16;
+    width: 106vw;
+    height: 106vh;
+    background-color: var(--black);
+    opacity: 0.25;
+    display: none;
+    margin: -5% -9%;
+    overflow-y: hidden;
+    transition: display var(--transition-time);
+}
+
+.menuIcon {
+    color: var(--black);
+}
+
+.menuBtn:hover {
+    color: var(--orange);
+}
+
+.menuBtn {
+    display: none;
+    font-size: 30px;
+    align-self: center;
+    margin-top: -6px;
+    transition: var(--transition-time);
+}
+
+#body {
+    transition: margin-right 0.5s;
+}
+
+@media (max-width: 701px) {
+    main {
+        width: 90%;
+    }
+
+    .card-container img {
+        width: calc((90vw / 2) - 0.75rem);
+        max-width: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .menuIcon {
+        display: inline-block;
+    }
+
+    .menuBtn {
+        display: block;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sideNav {
+        padding-top: 15px;
+    }
+
+    .sideNav a {
+        font-size: 18px;
+    }
+}

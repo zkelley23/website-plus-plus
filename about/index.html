@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A blog detailing the adventures of Zach and Grace while biking across Europe">
+    <title>Biking Across Europe | About</title>
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/mobile-menu.css">
+</head>
+
+<body id="body">
+    <header>
+        <nav>
+            <img src="../images/bike-icon.svg" alt="Bike by Berkah Icon from the Noun Project" class="svg" />
+            <span class="menuBtn" onclick="openNav()">&#9776;</span>
+            <div id="darken" onclick="closeNav()"></div>
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a class="active">About</a></li>
+                <li><a href="../contact/">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="picture">
+            <picture class="not-home-page">
+                <source srcset="../images/bike-1600w.jpg" media="(min-width: 901px)">
+                <source srcset="../images/bike-900w.jpg" media="(min-width: 501px)">
+                <source srcset="../images/bike-500w.jpg" media="(max-width: 500px)">
+
+                <img src="../images/bike-900w.jpg" alt="Photo of a white bike on a black background">
+            </picture>
+            <div class="header-container">
+                <h1>About</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Hello!</h2>
+        <p>We are Zach and Grace Kelley, a husband-and-wife duo biking across Europe. We are exploring Europe as part of a study abroad program through the Technology and Engineering Studyies major at BYU. We will be building our own bikes from scratch, touring bike manufacturing plants, and riding our bikes across Europe.</p>
+        <h2>The Plan</h2>
+        <p>This is a map that roughly outlines our travels.</p>
+        <section class="map">
+            <img src="../images/europe.svg" alt="map of europe" />
+        </section>
+        <ol>
+            <li>Frome, England</li>
+            <li>London, England</li>
+            <li>Normancy and Caen, France</li>
+            <li>Maastricht, Netherlands</li>
+            <li>Geneva, Switzerland</li>
+            <li>Chamonix, France</li>
+        </ol>
+    </main>
+    <footer>
+        <h3>Zach &amp; Grace Kelley</h3>
+        <p>May - July 2022</p>
+    </footer>
+    <div id="sideNav" class="sideNav">
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+        <a href="../">Home</a>
+        <a class="active">About</a>
+        <a href="../contact/">Contact</a>
+    </div>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

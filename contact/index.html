@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A blog detailing the adventures of Zach and Grace while biking across Europe">
+    <title>Biking Across Europe | Contact</title>
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/mobile-menu.css">
+</head>
+
+<body id="body">
+    <header>
+        <nav>
+            <img src="../images/bike-icon.svg" alt="Bike by Berkah Icon from the Noun Project" class="svg" />
+            <span class="menuBtn" onclick="openNav()">&#9776;</span>
+            <div id="darken" onclick="closeNav()"></div>
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="../about/">About</a></li>
+                <li><a class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="picture">
+            <picture class="not-home-page">
+                <source srcset="../images/bike-1600w.jpg" media="(min-width: 901px)">
+                <source srcset="../images/bike-900w.jpg" media="(min-width: 501px)">
+                <source srcset="../images/bike-500w.jpg" media="(max-width: 500px)">
+
+                <img src="../images/bike-900w.jpg" alt="Photo of a white bike on a black background">
+            </picture>
+            <div class="header-container">
+                <h1>Contact</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            <p>We'd love to talk with you while we're gone! Fill out the form below to let us know when you'd like to talk, how you'd like to talk, and what you'd like to talk about.</p>
+            <!-- <p>This form doesn't need an SVG, it's just fluff.</p> -->
+            <form>
+                <!-- NAME -->
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+                <!-- EMAIL -->
+                <label for="email">Email address</label>
+                <input type="email" name="email" id="email" required>
+                <!-- PHONE -->
+                <label for="phone">Phone number</label>
+                <input type="tel" name="phone" id="phone">
+                <!-- DATE -->
+                <label for="date">What day works best?</label>
+                <input type="date" name="date" id="date">
+                <!-- TIME OF DAY - RADIOS -->
+                <label for="radios">What time of day works best?</label>
+                <fieldset>
+                    <!-- <legend>What time of day works best?</legend> -->
+                    <input type="radio" name="time" id="morning" value="morning">
+                    <label for="morning">Morning</label>
+                    <input type="radio" name="time" id="afternoon" value="afternoon">
+                    <label for="afternoon">Afternoon</label>
+                    <input type="radio" name="time" id="evening" value="evening">
+                    <label for="evening">Evening</label>
+                </fieldset>
+                <!-- COMMUNICATION METHOD - CHECKBOXES -->
+                <label for="radios">How would you like to talk? <br><small>Check all that apply</small></label>
+                <fieldset>
+                    <!-- <legend>How would you like to talk? <small>Check all that apply</small></legend> -->
+                    <input type="checkbox" id="videoCall" name="commMethod" value="videoCall">
+                    <label for="videoCall">Video Call (FaceTime, Messenger, Zoom)</label>
+                    <input type="checkbox" id="phoneCall" name="commMethod" value="phoneCall">
+                    <label for="phoneCall">Phone Call</label>
+                    <input type="checkbox" id="text" name="commMethod" value="text">
+                    <label for="text">Text</label>
+                </fieldset>
+                <!-- MESSAGE -->
+                <label for="message">What do you want to talk about?</label>
+                <textarea name="message" id="message" rows="10"></textarea>
+                <!-- SEND -->
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h3>Zach &amp; Grace Kelley</h3>
+        <p>May - July 2022</p>
+    </footer>
+    <div id="sideNav" class="sideNav">
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+        <a href="../">Home</a>
+        <a href="../about/">About</a>
+        <a class="active">Contact</a>
+    </div>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>
